@@ -1,0 +1,6 @@
+@canary_push_notification_test.Server_HostAddress = http://localhost:5270
+
+GET {{canary_push_notification_test.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

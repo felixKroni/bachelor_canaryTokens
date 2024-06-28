@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "canary_push_notification_test.Server", "canary_push_notification_test.Server\canary_push_notification_test.Server.csproj", "{CC4ACD89-E63D-4B2C-8732-9E93BDB423B3}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "canary_push_notification_test.client", "canary_push_notification_test.client\canary_push_notification_test.client.esproj", "{ECEC3B8F-ECB4-4C30-AA70-F8C7E36C9ED0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC4ACD89-E63D-4B2C-8732-9E93BDB423B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC4ACD89-E63D-4B2C-8732-9E93BDB423B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC4ACD89-E63D-4B2C-8732-9E93BDB423B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC4ACD89-E63D-4B2C-8732-9E93BDB423B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECEC3B8F-ECB4-4C30-AA70-F8C7E36C9ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECEC3B8F-ECB4-4C30-AA70-F8C7E36C9ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECEC3B8F-ECB4-4C30-AA70-F8C7E36C9ED0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{ECEC3B8F-ECB4-4C30-AA70-F8C7E36C9ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECEC3B8F-ECB4-4C30-AA70-F8C7E36C9ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECEC3B8F-ECB4-4C30-AA70-F8C7E36C9ED0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {716980F7-A7C5-4322-A881-EA2170F1EC41}
+	EndGlobalSection
+EndGlobal

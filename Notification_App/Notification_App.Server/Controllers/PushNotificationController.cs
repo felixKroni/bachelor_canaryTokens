@@ -47,6 +47,12 @@ namespace Notification_App.Server.Controllers
 
             return Ok();
         }
+
+        [HttpGet("test")]
+        public IActionResult TestGetRequest()
+        {
+            return Ok("Hello from the server!");
+        }
     }
 
 }

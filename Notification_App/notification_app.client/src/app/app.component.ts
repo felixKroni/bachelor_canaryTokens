@@ -1,13 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
-interface WeatherForecast {
-  date: string;
-  temperatureC: number;
-  temperatureF: number;
-  summary: string;
-}
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -58,12 +51,21 @@ export class AppComponent implements OnInit {
   }
 
   sendSubscriptionToServer(subscription: PushSubscription) {
-    fetch('/api/subscribe', {
+    fetch('https://localhost:7201/api/PushNotification/subscribe', {
       method: 'POST',
       body: JSON.stringify(subscription),
       headers: {
         'Content-Type': 'application/json'
       }
+    }).then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    }).then(data => {
+      console.log('Subscription successful:', data);
+    }).catch(error => {
+      console.error('There was a problem with the fetch operation:', error);
     });
   }
 
